@@ -1,3 +1,5 @@
+#Preparação dos Dados para criar o .csv 
+
 import pandas as pd
 from pymongo import MongoClient
 
