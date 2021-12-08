@@ -18,4 +18,4 @@ Data were collected and stored in JSON format in a NoSQL database, more specific
 
 
 #
-This is part 1 of 5 of the course completion work. Developed by <a href="https://github.com/bpaixao">Beatriz Paixão</a> and <a href="https://github.com/katheleen-gregorato">Katheleen Gregorato</a>
+This is part 1 of 5 of the course completion work. Developed by <a href="https://github.com/bpaixao">Beatriz Paixão</a> and <a href="https://github.com/katheleen-gregorato">Katheleen Gregorato</a>. See our publication in CONICT - IFSP at: https://bit.ly/3IsqULo
