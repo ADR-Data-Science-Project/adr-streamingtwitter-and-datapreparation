@@ -1,14 +1,15 @@
 # Streaming Twitter and Data Preparation
 
-<p>In this project, to build a dataset with Adverse Reactions to Medicines, we used the Twitter API for the data collection step, to obtain these data in real time. To use it, it is necessary to provide information about the purpose of its use, and once this is done, it is essential to create an application in the developer login, where the access keys and tokens (Consumer Key (API Key), Consumer Secret (API Secret) will be displayed , Access Token, Access Token Secret). 
-<br>
-With the access granted, Python libraries were used to perform queries and collections of tweets, the main one used in this stage was Tweepy, one of the functions being the collection of tweets.
+<p>In this project, we built a dataset of Adverse Reactions to Antidepressant Drugs, using the Twitter API to obtain this data in real time.
+
+With access granted, we used the Python libraries to perform queries and collect tweets, the main one used in this step was Tweepy.
 </p>
 <p>
-To specify drug searches, a filter was developed that searches for tweets based on certain keywords, in this case, antidepressants from 5 different classes. In total there were 33 antidepressants and in addition to the chemical name, commercial names were added, totaling 50 keywords. Searches were made in a variety of formats common on the social network, that is, using the drug "Fluoxetina", for example, we searched for three variations such as: @Fluoxetina, #Fluoxetina, Fluoxetina. In addition, we guarantee the filtering of tweets by the language in “pt” (Portuguese). All the script for this step was developed in Visual Studio Code using the Python language. <br>
+We use a filter in the script with antidepressant keywords in 5 different classes (chemical and commercial name)
+Searches in common formats on the social network, that is, using the drug “Fluoxetine”, we look for variations such as: @Fluoxetine, #Fluoxetine, Fluoxetine. In addition to ensuring the filtering of tweets by language in “pt” (Portuguese). <br>
 </p>
 <p>
-However, to collect and retain a large amount of data it was necessary for the streaming script to run uninterrupted. Therefore, we use a Linux instance of EC2 on AWS of type t2.micro, so all the collection and storage code was executed in the background through this virtual machine. The collection of tweets started on 14/04/2021 and continues to happen until now.
+The streaming script ran non-stop using an EC2 Linux instance on AWS of type t2.micro, a high availability cluster. Tweet collection started on 04/14/2021 and continues to happen until now.
 </p>
 <p>
 Data were collected and stored in JSON format in a NoSQL database, more specifically, MongoDB, using the Pymongo library.
